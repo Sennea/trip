@@ -33,7 +33,7 @@ const Modal: React.FC<ModalPropTypes> = ({ data, currentScroll }) => {
         const offsetHeightElement = document.getElementById(el.id)?.offsetTop;
         if (!offsetHeightElement) return;
 
-        if (offsetHeightElement <= currentScroll && currentScroll < previous ) {
+        if (offsetHeightElement-1 < currentScroll && currentScroll < previous -1 ) {
           image = el.mapImage;
           previous = offsetHeightElement;
         }
