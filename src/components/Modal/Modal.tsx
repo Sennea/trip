@@ -38,7 +38,7 @@ const Modal: React.FC<ModalPropTypes> = ({ data, currentScroll }) => {
           previous = offsetHeightElement;
         }
       });
-    return imageNameMap[image];
+    return imageNameMap[image] || imageNameMap['day1'];
   };
 
   return (
