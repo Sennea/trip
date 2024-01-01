@@ -1,0 +1,33 @@
+.wrapper {
+    padding: 20px;
+}
+
+
+
+@mixin fancy($border, $width, $gap, $color) {
+    width: fit-content;
+    padding: 0 1em;
+    line-height: 1.6em;
+    border: 1px solid;
+    color: #fff;
+    background: 
+      conic-gradient(from   45deg at left , $color 25%,#0000 0) 0,
+      conic-gradient(from -135deg at right, $color 25%,#0000 0) 100%;
+    background-size: 51% 100%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    border-image: 
+       linear-gradient(
+         #0000      calc(50% - $border/2),
+         $color 0 calc(50% + $border/2),
+         #0000    0) 
+      1/0 $width #{"/"} ($width + $gap);
+    margin-inline: auto;
+  }
+
+
+.title {
+    @include fancy(6px, 200px, 15px, #1a1a1a);
+    text-align: center;
+    font-size: 2rem;
+}

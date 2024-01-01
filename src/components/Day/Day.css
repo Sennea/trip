@@ -1,0 +1,20 @@
+.left {
+  float: left !important;
+  margin: 10px 30px 10px 0 !important;
+  order: 1 i !important
+}
+
+.center {
+    margin: 10px auto !important;
+    float: none !important;
+    max-width: 80% !important;
+    display: block !important;
+}
+
+.bigger {
+  max-width: 70%  !important;
+}
+
+.full {
+  max-width: 100%  !important;
+}

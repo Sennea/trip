@@ -1,0 +1,55 @@
+.wrapper {
+  float: right;
+  margin: 5px;
+}
+
+.info {
+  display: flow-root;
+  ul {
+    list-style-type: square;
+    padding: 0 0 0 5px;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    text-indent: 10px;
+  }
+
+  img {
+    max-width: 40%;
+    height: fit-content;
+    margin: 10px 0 10px 10px;
+    float: right;
+    order: 2; 
+  }
+}
+
+@mixin fancy($border, $width, $gap, $color) {
+  width: fit-content;
+  padding: 0 1em;
+  line-height: 1.6em;
+  border: 1px solid;
+  color: #fff;
+  background: 
+    conic-gradient(from   45deg at left , $color 25%,#0000 0) 0,
+    conic-gradient(from -135deg at right, $color 25%,#0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: 
+     linear-gradient(
+       #0000      calc(50% - $border/2),
+       $color 0 calc(50% + $border/2),
+       #0000    0) 
+    1/0 $width #{"/"} ($width + $gap);
+  margin-inline: auto;
+}
+
+.fancyBig {
+  @include fancy(6px, 200px, 15px, #0B486B);
+}
+
+.fancySub {
+  @include fancy(6px, 80px, 15px, #6e57c0);
+}
