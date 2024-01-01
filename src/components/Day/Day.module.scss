@@ -22,6 +22,10 @@
     margin: 10px 0 10px 10px;
     float: right;
     order: 2; 
+
+    @media only screen and (max-width: 600px) {
+      max-width: 100%;
+    }
   }
 }
 

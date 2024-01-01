@@ -1,37 +1,60 @@
 .wrapper {
-    background-color: #eaeaea;
-    height: 100%;
+  background-color: #eaeaea;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  right: 0;
+  top: 0;
+  width: 25%;
+
+  @media only screen and (max-width: 600px) {
+    width: 0px;
+    text-align: center;
+  }
+}
+
+@keyframes fade-in {
+    from { width: 0px}
+    to { width: 100%}
+  }
+
+  .fade {
+      animation: fade-in 0.5s ease-in forwards;
+  }
+
+.expand {
     position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
-    padding-top: 20px;
     right: 0;
-    top: 0;
-    width: 25%;
+    top:50%;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(63, 63, 63);
 }
 
 .list {
-    list-style-type: none;
-    padding: 20px;
-    margin: 0;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
 }
 
 .listElement {
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-bottom: 2px;
-    margin-top: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    &:hover {
-        font-weight: bold;
-    }
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .listSubElement {
-    font-size: 1rem;
-    @extend .listElement;
-    text-indent: 10px;
-    margin-top: 0;
+  font-size: 1rem;
+  @extend .listElement;
+  text-indent: 10px;
+  margin-top: 0;
 }
