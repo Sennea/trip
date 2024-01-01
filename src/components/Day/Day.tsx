@@ -18,10 +18,11 @@ export const createId = (title: string) =>
 
 const Day: React.FC<DayPropTypes> = ({ day }) => {
   return (
-    <div id={createId(day.title)} className={styles.wrapper}>
+    <div key={day.title} id={createId(day.title)} className={styles.wrapper}>
       <h1 className={styles.fancyBig}>{day.title}</h1>
       {day.parts.map((detail) => (
         <div
+        key={detail.title}
           id={createId(day.title + detail.title)}
           className={styles.detailsWrapper}
         >

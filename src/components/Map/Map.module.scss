@@ -1,0 +1,26 @@
+
+.expand {
+  position: fixed;
+  left: 0;
+  top: 20%;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(63, 63, 63);
+  background-color: gray;
+  border: 1px black;
+  border-top-right-radius:  50%;
+  border-bottom-right-radius:  50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    right: 0;
+    left:auto;
+    border-top-right-radius:  0;
+  border-bottom-right-radius:  0;
+
+  border-top-left-radius:  50%;
+  border-bottom-left-radius:  50%;
+  }
+}

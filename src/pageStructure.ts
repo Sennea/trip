@@ -3,6 +3,7 @@ export const tripData = {
   details: [
     {
       title: "Dzień 1",
+      mapImage: 'day1',
       parts: [
         {
           title: "Przylot i transport",
@@ -39,13 +40,13 @@ export const tripData = {
 <br />
 <p>Większość atrakcji znajdziemy w biletowanej części parku. Do najbardziej znanych należą:</p>
 <ul>
-<li><strong>taras</strong>&nbsp;widokowy,&nbsp;<strong>określamy przez miejscowych najdłuższą ławką świata</strong>.&nbsp;<strong>Ławk"</strong>&nbsp;zaprojektowana została w ten spos&oacute;b, aby każdy m&oacute;gł siedząc na niej odczuwać prywatność. Dodatkowo kafelkowa budowla doskonale odprowadza wodę.<br /><img class="left" src="https://www.podrozepoeuropie.pl/system/gallery/images/images/000/004/445/large/lawka-w-Parku-Guell-w-Barcelonie.JPG?1468592451" alt="" width="800" height="533" /></li>
+<li><strong>taras</strong>&nbsp;widokowy,&nbsp;<strong>określamy przez miejscowych najdłuższą ławką świata</strong>.&nbsp;<strong>Ławk"</strong>&nbsp;zaprojektowana została w ten spos&oacute;b, aby każdy m&oacute;gł siedząc na niej odczuwać prywatność. Dodatkowo kafelkowa budowla doskonale odprowadza wodę.<br /><img class="left" src="https://www.podrozepoeuropie.pl/system/gallery/images/images/000/004/445/large/lawka-w-Parku-Guell-w-Barcelonie.JPG?1468592451" alt="" /></li>
 <li>Taras znajduje się tuż nad masywną salą kolumnową zwaną&nbsp;<strong>Sala Hip&ograve;stila</strong>, kt&oacute;ra przypomina budowle greckie lub rzymskie. Jej kolumnada składa się z aż&nbsp;<strong>86 kolumn w porządku doryckim</strong>, a cała hala zgodnie z pierwotnym założeniem miała służyć jako targowisko.</li>
 <li>obie strony zabytkowej bramy flankują piękne pawilony wzniesione w latach 1901-1902 - w jednym z nich mieści się niewielka wystawa, w drugim sklep. Będąc na miejscu koniecznie zajrzyjmy do środka.</li>
 <li>od bramy do tarasu prowadzą schody, na kt&oacute;rych umieszczone zostały: słynna Salamandra oraz piękna instalacja imitującą jaskinię.<br /><img src="https://www.podrozepoeuropie.pl/system/gallery/images/images/000/004/438/large/Salamandra-w-Parku-Guell-w-Barcelonie.JPG?1468590793" alt="" /></li>
 <li>kryty portyk przywodzący swym kształtem na myśl świat fantasy,</li>
 <li>
-<p>Osoby zainteresowane życiem prywatnym Gaud&iacute;ego mogą udać się do poświęconego mu muzeum (Casa Museu de Gaud&iacute;), kt&oacute;re mieści się w zamieszkiwanym przez niego domu pokazowym. Nie należy ono do największych, ale pomoże przybliżyć nam jego postać.</p><img class="left" src="https://www.podrozepoeuropie.pl/system/gallery/images/images/000/003/984/large/El-Calvario-Parc-Guell-Barcelona.JPG?1465608730" alt="" width="800" height="326" />
+<p>Osoby zainteresowane życiem prywatnym Gaud&iacute;ego mogą udać się do poświęconego mu muzeum (Casa Museu de Gaud&iacute;), kt&oacute;re mieści się w zamieszkiwanym przez niego domu pokazowym. Nie należy ono do największych, ale pomoże przybliżyć nam jego postać.</p><img class="left" src="https://www.podrozepoeuropie.pl/system/gallery/images/images/000/003/984/large/El-Calvario-Parc-Guell-Barcelona.JPG?1465608730" alt="" />
 <p>Mając więcej czasu warto pospacerować się po og&oacute;lnodostępnej części parku i wejść na jego wyższe poziomy. Pomimo wielu drzew łatwo odnaleźć miejsca widokowe, z kt&oacute;rych zobaczymy większą część Barcelony. Do popularnych&nbsp;punkt&oacute;w widokowych Barcelony&nbsp;należy położone niedaleko wzg&oacute;rze trzech krzyży.<br /></p>
 </li>
 </ul>
@@ -56,7 +57,7 @@ export const tripData = {
         },
         {
           title: "Casa Vicens",
-          details: `<img src="https://aws-tiqets-cdn.imgix.net/images/content/9528674f03c44fe0b5fad6f5a055e924.jpg?auto=format&amp;fit=crop&amp;ixlib=python-3.2.1&amp;q=70&amp;s=4f3efdc227d46a381c7e9c455d014720" alt="" width="1166" height="986" /><br />Jest to pierwszy dom, jaki w swojej projektowej karierze stworzył Antonio Gaudi. <br />Budynek powstał w latach 1883-1885 jak letnia rezydencja rodziny Vicenees w Barcelonie. Od 2005 roku dom znajduje się na Liście Światowego Dziedzictwa UNESCO.<br />
+          details: `<img src="https://aws-tiqets-cdn.imgix.net/images/content/9528674f03c44fe0b5fad6f5a055e924.jpg?auto=format&amp;fit=crop&amp;ixlib=python-3.2.1&amp;q=70&amp;s=4f3efdc227d46a381c7e9c455d014720" alt=""/><br />Jest to pierwszy dom, jaki w swojej projektowej karierze stworzył Antonio Gaudi. <br />Budynek powstał w latach 1883-1885 jak letnia rezydencja rodziny Vicenees w Barcelonie. Od 2005 roku dom znajduje się na Liście Światowego Dziedzictwa UNESCO.<br />
           <p class="text-destacado">W tym domu wyeksponowano architektoniczną koncepcję Gaudiego, kt&oacute;rej pozostał wierny w projektach swych pozostałych budowli, materiały o własnej fakturze i kolorystyce, egzaltację kolorem i świat roślinny.</p>
           <p class="text-secundario">Od zewnątrz dom obfituje w cegły i ceramikę, ponieważ właściciel domu miał kamieniołom, w kt&oacute;rym produkował te materiały, a kt&oacute;re narzucił Gaudiemu w budowie. Budynek nawiązuje do architektury mudejar. Styl Gaudiego jest prawdziwie widoczny we wnętrzu domu.</p>`,
         },
@@ -93,6 +94,7 @@ export const tripData = {
     },
     {
       title: "Dzień 2",
+      mapImage: 'day2',
       parts: [
         {
           title: "Sagrada Familia",
@@ -163,6 +165,7 @@ export const tripData = {
     },
     {
       title: "Dzień 3",
+      mapImage: 'day3',
       parts: [
         {
           title: "Wzgórze Montjuc",
@@ -209,6 +212,7 @@ export const tripData = {
     },
     {
       title: "Atrakcje na czas wolny",
+      mapImage: 'atraction1',
       parts: [
         {
           title: "Spacer do portu",

@@ -4,13 +4,20 @@ import { createId } from "./components/Day/Day";
 import Navigation from "./components/Navigation";
 import { tripData } from "./pageStructure";
 import styles from "./App.module.scss";
+import Map from "./components/Map";
 
 function App() {
   const { title, details } = tripData;
-  const navigation: { title: string; id: string; level: number }[] = [];
+  const navigation: {
+    title: string;
+    mapImage: string;
+    id: string;
+    level: number;
+  }[] = [];
   details.forEach((detail) => {
     navigation.push({
       title: detail.title,
+      mapImage: detail.mapImage,
       id: createId(detail.title),
       level: 0,
     });
@@ -18,6 +25,7 @@ function App() {
     detail.parts.forEach((part) => {
       navigation.push({
         title: part.title,
+        mapImage: detail.mapImage,
         id: createId(detail.title + part.title),
         level: 1,
       });
@@ -32,6 +40,7 @@ function App() {
           <Day day={day} />
         ))}
       </div>
+      <Map map={navigation} />
       <Navigation navigation={navigation} />
     </div>
   );

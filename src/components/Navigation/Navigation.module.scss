@@ -11,32 +11,75 @@
 
   @media only screen and (max-width: 600px) {
     width: 0px;
-    text-align: center;
+    background-color: white;
   }
 }
 
 @keyframes fade-in {
-    from { width: 0px}
-    to { width: 100%}
+  from {
+    width: 0px;
   }
+  to {
+    width: 100%;
+  }
+}
 
-  .fade {
-      animation: fade-in 0.5s ease-in forwards;
+@keyframes fade-out {
+  from {
+    width: 100%;
   }
+  to {
+    width: 0px;
+  }
+}
+
+.fade {
+  animation: fade-in 0.5s ease-in forwards;
+}
+
+.fadeOut {
+  animation: fade-out 0.5s ease-in forwards;
+}
+
+.exit {
+  text-align: end;
+  margin: 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+
+  @media only screen and (min-width: 601px) {
+    display: none;
+  }
+}
 
 .expand {
-    position: fixed;
-    right: 0;
-    top:50%;
-    font-size: 40px;
-    cursor: pointer;
-    color: rgb(63, 63, 63);
+  position: fixed;
+  right: 0;
+  top: 25%;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  border-top-left-radius:  50%;
+  border-bottom-left-radius:  50%;
+  background-color: gray;
+  border: 1px black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
 }
 
 .list {
   list-style-type: none;
   padding: 20px;
   margin: 0;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 }
 
 .listElement {
