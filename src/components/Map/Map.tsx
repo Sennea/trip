@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from "./Map.module.scss";
 
-import cx from "clsx";
 import { createPortal } from "react-dom";
 import Modal from "../Modal";
+import compass from "../../images/compass.png";
 
 export interface MapPropTypes {
   map: { title: string; mapImage: string; id: string; level: number }[];
@@ -17,18 +17,19 @@ const Map: React.FC<MapPropTypes> = ({ map }) => {
     <div>
       <div
         onClick={() => {
-          setModal(true)
+          setModal(true);
         }}
         className={styles.expand}
       >
-        🚶🏼
+        <img className={styles.icon} src={compass} />
       </div>
-      {modal && createPortal(
-        <div onClick={() => setModal(false)}>
-        <Modal currentScroll={window.pageYOffset} data={map} />
-        </div>,
-        document.getElementById("modal")!
-      )}
+      {modal &&
+        createPortal(
+          <div onClick={() => setModal(false)}>
+            <Modal currentScroll={window.pageYOffset} data={map} />
+          </div>,
+          document.getElementById("modal")!
+        )}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./Navigation.module.scss";
+import menu from '../../images/menu.png'
 
 import cx from "clsx";
 
@@ -15,7 +16,7 @@ const Navigation: React.FC<NavigationPropTypes> = ({ navigation }) => {
   return (
     <div>
       <div onClick={() => setFade(true)} className={styles.expand}>
-        ◀︎
+        <img className={styles.icon}  src={menu}></img> 
       </div>
       <div
         className={cx(
