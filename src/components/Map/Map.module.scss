@@ -1,26 +1,19 @@
-
 .expand {
   position: fixed;
-  left: 0;
-  top: 20%;
+  right: 0;
+  top: 5%;
   font-size: 30px;
   cursor: pointer;
   color: rgb(63, 63, 63);
   background-color: gray;
-  border: 1px black;
-  border-top-right-radius:  50%;
-  border-bottom-right-radius:  50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
   width: 40px;
   height: 40px;
   text-align: center;
+  z-index: 4;
 
   @media only screen and (max-width: 600px) {
-    right: 0;
-    left:auto;
-    border-top-right-radius:  0;
-  border-bottom-right-radius:  0;
-
-  border-top-left-radius:  50%;
-  border-bottom-left-radius:  50%;
+    top: 20%;
   }
 }
