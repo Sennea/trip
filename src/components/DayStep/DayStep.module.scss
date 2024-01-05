@@ -5,6 +5,8 @@
 
 .info {
   display: flow-root;
+  opacity: 0.5;
+
   ul {
     list-style-type: circle;
     margin: 0;
@@ -23,7 +25,7 @@
     max-width: 40%;
     margin: 10px 0 10px 10px;
     float: right;
-    order: 2; 
+    order: 2;
     border-radius: 10px;
 
     @media only screen and (max-width: 600px) {
@@ -39,30 +41,46 @@
   text-align: center;
   border: 1px solid;
   color: #fff;
-  background: 
-    conic-gradient(from   45deg at left , $color 25%,#0000 0) 0,
-    conic-gradient(from -135deg at right, $color 25%,#0000 0) 100%;
+  background: conic-gradient(from 45deg at left, $color 25%, #0000 0) 0,
+    conic-gradient(from -135deg at right, $color 25%, #0000 0) 100%;
   background-size: 51% 100%;
   background-origin: border-box;
   background-repeat: no-repeat;
-  border-image: 
-     linear-gradient(
-       #0000      calc(50% - $border/2),
-       $color 0 calc(50% + $border/2),
-       #0000    0) 
+  border-image: linear-gradient(
+      #0000 calc(50% - $border/2),
+      $color 0 calc(50% + $border/2),
+      #0000 0
+    )
     1/0 $width #{"/"} ($width + $gap);
   margin-inline: auto;
 }
 
 .fancyBig {
-  @include fancy(6px, 200px, 15px, #0B486B);
+  @include fancy(6px, 200px, 15px, #0b486b);
 }
 
 .fancySub {
   @include fancy(6px, 80px, 15px, #745ad3);
 }
 
-
 .visible {
   background: chartreuse;
+}
+
+  @keyframes example {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.animate {
+ animation: ease-in example 0.5s forwards;
+}
+
+
+.bold {
+  font-weight: bold;
 }

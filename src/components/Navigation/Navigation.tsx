@@ -1,9 +1,11 @@
 import React from "react";
 
 import styles from "./Navigation.module.scss";
-import menu from '../../images/menu.png'
+import menu from "../../images/menu.png";
+import { useScroll } from "./useScroll";
 
 import cx from "clsx";
+import clsx from "clsx";
 
 export interface NavigationPropTypes {
   navigation: { title: string; id: string; level: number }[];
@@ -16,7 +18,7 @@ const Navigation: React.FC<NavigationPropTypes> = ({ navigation }) => {
   return (
     <div>
       <div onClick={() => setFade(true)} className={styles.expand}>
-        <img className={styles.icon}  src={menu}></img> 
+        <img className={styles.icon} src={menu}></img>
       </div>
       <div
         className={cx(
@@ -40,10 +42,11 @@ const Navigation: React.FC<NavigationPropTypes> = ({ navigation }) => {
         <ul className={styles.list}>
           {navigation.map((nav) => (
             <li
-            key={nav.id}
-              className={
-                nav.level === 0 ? styles.listElement : styles.listSubElement
-              }
+            id={`navigation_${nav.id}`}
+              key={nav.id}
+              className={clsx(
+                nav.level === 0 ? styles.listElement : styles.listSubElement,
+              )}
               onClick={() => {
                 setFade(false);
                 document
