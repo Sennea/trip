@@ -1,9 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import styles from "./Modal.module.scss";
-
-import cx from "clsx";
-import { createPortal } from "react-dom";
 
 import day1 from "../../images/day1.png";
 import day2 from "../../images/day2.png";
@@ -45,7 +42,7 @@ const Modal: React.FC<ModalPropTypes> = ({ data, currentScroll }) => {
     <div className={styles.wrapper}>
       <div className={styles.overlay}></div>
       <div className={styles.imageWrapper}>
-        <img className={styles.image} src={pickImage()}></img>
+        <img className={styles.image} alt="" src={pickImage()}></img>
       </div>
     </div>
   );

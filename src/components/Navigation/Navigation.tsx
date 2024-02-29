@@ -18,7 +18,7 @@ const Navigation: React.FC<NavigationPropTypes> = ({ navigation }) => {
   return (
     <div>
       <div onClick={() => setFade(true)} className={styles.expand}>
-        <img className={styles.icon} src={menu}></img>
+        <img className={styles.icon} alt="" src={menu}></img>
       </div>
       <div
         className={cx(

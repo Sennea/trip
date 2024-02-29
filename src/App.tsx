@@ -40,7 +40,7 @@ function App() {
           <Day day={day} />
         ))}
       </div>
-      <Map map={navigation} />
+      {/* <Map map={navigation} /> */}
       <Navigation navigation={navigation} />
     </div>
   );

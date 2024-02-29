@@ -21,7 +21,7 @@ const Map: React.FC<MapPropTypes> = ({ map }) => {
         }}
         className={styles.expand}
       >
-        <img className={styles.icon} src={compass} />
+        <img className={styles.icon} alt="" src={compass} />
       </div>
       {modal &&
         createPortal(
